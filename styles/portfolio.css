@@ -1,0 +1,101 @@
+:root {
+  --title-color: #212121;
+  --text-color: #757575;
+  --background-color: #fff;
+  --main_title-color: #fff;
+  --navigation-color: #2196f3;
+  --icons-color: #afb1b8;
+}
+body {
+  font-family: Roboto;
+}
+.header-logo {
+  color: var(--navigation-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.header-studio {
+  color: var(--text-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.header-nav {
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.header-nav:hover {
+  color: var(--navigation-color);}
+.header-information {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.main-button {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: var(--background-color);
+}
+.main-button:hover {
+  color: var(--main_title-color);
+  background: var(--navigation-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.main-title {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2; 
+  letter-spacing: 1.08px;
+}
+.main-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.48px;
+}
+.footer-logo {
+  color: var(--navigation-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+.footer-studio {
+  color: var(--main_title-color);
+}
+.footer-nav {
+  color: var(--main_title-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer {
+  background: var(--title-color);
+}
