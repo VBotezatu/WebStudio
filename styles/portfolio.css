@@ -1,4 +1,5 @@
 :root {
+  --logo-color: #000000;
   --title-color: #212121;
   --text-color: #757575;
   --background-color: #fff;
@@ -18,7 +19,7 @@ body {
   letter-spacing: 0.78px;
 }
 .header-studio {
-  color: var(--text-color);
+  color: var(--logo-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -33,7 +34,8 @@ body {
   letter-spacing: 0.28px;
 }
 .header-nav:hover {
-  color: var(--navigation-color);}
+  color: var(--navigation-color);
+}
 .header-information {
   color: var(--text-color);
   font-size: 14px;
@@ -61,7 +63,7 @@ body {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
-  line-height: 2; 
+  line-height: 2;
   letter-spacing: 1.08px;
 }
 .main-text {
