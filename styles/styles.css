@@ -7,16 +7,23 @@
   --navigation-color: #2196f3;
   --icons-color: #afb1b8;
 }
-.container{
- width: 1200px;
- padding-left: 15px;
- padding-right: 15px;
- margin-left: auto;
- margin-right: auto;
- outline: solid red;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: solid red;
 }
 body {
   font-family: Roboto;
+}
+.header {
+  padding: 32px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
   color: var(--navigation-color);
@@ -29,6 +36,12 @@ body {
 .header-studio {
   color: var(--logo-color);
 }
+.header-list {
+  margin-left: 93px;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
 .header-link {
   color: var(--title-color);
   font-size: 14px;
@@ -39,6 +52,11 @@ body {
 .header-link:hover {
   color: var(--navigation-color);
 }
+.header-contacts {
+  margin-left: 346px;
+  display: flex;
+  gap: 50px;
+}
 .header-adress {
   color: var(--text-color);
   font-size: 14px;
@@ -48,6 +66,10 @@ body {
 }
 .header-adress:hover {
   color: var(--navigation-color);
+}
+.main-container {
+  display: flex;
+  align-items: center;
 }
 .solution {
   background: var(--title-color);
@@ -60,6 +82,7 @@ body {
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  align-items: center;
 }
 
 .solution-button {
@@ -75,6 +98,8 @@ body {
   border-radius: 4px;
   background: var(--navigation-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  align-items: center;
 }
 .features-title {
   color: var(--title-color);
@@ -84,12 +109,23 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+.features-item {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .features-text {
   color: var(--text-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-top: 10px;
 }
 .photo-title {
   color: var(--title-color);
@@ -98,6 +134,12 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.photo-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
 }
 .team-title {
   color: var(--title-color);
@@ -106,6 +148,15 @@ body {
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+.team-img {
+  margin-bottom: 30px;
 }
 .team-name {
   color: var(--title-color);
@@ -114,6 +165,7 @@ body {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--icons-color);
