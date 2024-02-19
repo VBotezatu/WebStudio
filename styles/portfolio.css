@@ -18,6 +18,12 @@
 body {
   font-family: Roboto;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .header-logo {
   color: var(--navigation-color);
   font-family: Raleway;
@@ -33,6 +39,18 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+.header-links {
+  display: flex;
+  gap: 60px;
+  margin-right: 320px;
+  align-items: center;
+  margin-left: 90px;
+}
+.header-navigations {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 .header-nav {
   color: var(--title-color);
@@ -60,6 +78,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.main-container {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  align-items: center;
+}
+.main-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 .main-button {
   color: var(--title-color);
   text-align: center;
@@ -82,6 +110,13 @@ body {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
+  margin-top: 22px;
+  margin-bottom: 4px;
+}
+.main-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .main-text {
   color: var(--text-color);
@@ -90,6 +125,9 @@ body {
   line-height: 1.88;
   letter-spacing: 0.48px;
 }
+.div-container {
+  margin-bottom: 94px;
+}
 .footer-logo {
   color: var(--navigation-color);
   font-family: Raleway;
@@ -97,6 +135,7 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+  margin-bottom: 20px;
 }
 .footer-studio {
   color: var(--main_title-color);
@@ -107,6 +146,7 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-bottom: 9px;
 }
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
@@ -126,4 +166,6 @@ body {
 }
 .footer {
   background: var(--title-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
