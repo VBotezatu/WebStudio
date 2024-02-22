@@ -86,7 +86,7 @@ body {
 .main-links {
   display: flex;
   gap: 8px;
-  align-items: center;
+  justify-content: center;
 }
 .main-button {
   color: var(--title-color);
