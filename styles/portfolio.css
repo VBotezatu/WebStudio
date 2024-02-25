@@ -78,15 +78,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.main-container {
-  margin-top: 44px;
-  margin-bottom: 44px;
+.button-container {
   align-items: center;
 }
-.main-links {
+.button-links {
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+.buttons {
+  padding-top: 94px;
+  padding-bottom: 48px;
 }
 .main-button {
   color: var(--title-color);
@@ -96,7 +98,9 @@ body {
   line-height: 1.63;
   letter-spacing: 0.48px;
   border-radius: 4px;
-  background: var(--background-color);
+  background: var(--icons-color);
+  width: 102px;
+  height: 38px;
 }
 .main-button:hover {
   color: var(--main_title-color);
@@ -104,21 +108,25 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.main-title {
+.posters-title {
   color: var(--title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-top: 22px;
-  margin-bottom: 4px;
 }
-.main-imgs {
+.posters-imgs {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.main-text {
+.posters-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.posters-text {
   color: var(--text-color);
   font-size: 16px;
   font-weight: 400;
@@ -164,8 +172,50 @@ body {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+.footer-join {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-subscribe {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+}
+.subscribe-button {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+}
 .footer {
   background: var(--title-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
