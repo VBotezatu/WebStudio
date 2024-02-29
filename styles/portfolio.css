@@ -108,6 +108,9 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
+.postersss{
+  padding-bottom: 150px;
+}
 .posters-title {
   color: var(--title-color);
   font-size: 18px;
@@ -132,10 +135,9 @@ body {
   font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.48px;
+  margin-top: 4px;
 }
-.div-container {
-  margin-bottom: 94px;
-}
+
 .footer-logo {
   color: var(--navigation-color);
   font-family: Raleway;
@@ -171,6 +173,9 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+}
+.footer-number{
+  margin-top: 9px;
 }
 .footer-join {
   font-weight: 700;
