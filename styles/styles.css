@@ -148,8 +148,8 @@ body {
   gap: 30px;
 }
 .team {
-padding-bottom: 94px;
-padding-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team-title {
   color: var(--title-color);
