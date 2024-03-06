@@ -20,15 +20,16 @@ ul {
 a {
   text-decoration: none;
 }
-button{
-cursor: pointer;
-border: none;
+button {
+  cursor: pointer;
+  border: none;
 }
-address{
-font-style: normal;
+address {
+  font-style: normal;
 }
-img{
+img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }

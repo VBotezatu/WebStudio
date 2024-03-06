@@ -13,7 +13,6 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid red;
 }
 body {
   font-family: Roboto;
@@ -87,7 +86,6 @@ body {
   text-transform: uppercase;
   align-items: center;
   max-width: 596px;
-  outline: solid greenyellow;
 }
 
 .solution-button {
@@ -121,7 +119,6 @@ body {
 .features-list {
   display: flex;
   gap: 30px;
-  outline: solid greenyellow;
 }
 .features-text {
   color: var(--text-color);
@@ -165,8 +162,11 @@ body {
   gap: 30px;
 }
 .team-item {
-  outline: solid goldenrod;
   padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
 }
 .team-img {
   margin-bottom: 30px;
