@@ -116,6 +116,24 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.features-pictures {
+  display: flex;
+  gap: 30px;
+}
+.features-picture {
+  display: flex;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  background-color: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.features-img {
+  width: 70px;
+  height: 70px;
+}
 .features-list {
   display: flex;
   gap: 30px;
