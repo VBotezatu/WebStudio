@@ -75,6 +75,7 @@ body {
   background: var(--title-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url();
 }
 .solution-title {
   color: var(--background-color);
@@ -166,6 +167,9 @@ body {
 .photo-list {
   display: flex;
   gap: 30px;
+}
+.photo-img {
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 .team {
   padding-bottom: 94px;
