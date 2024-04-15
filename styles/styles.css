@@ -75,7 +75,9 @@ body {
   background: var(--title-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url();
+  background-image: url(../images/company.png), url(../images/solution.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .solution-title {
   color: var(--background-color);
