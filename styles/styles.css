@@ -176,6 +176,7 @@ body {
 .team {
   padding-bottom: 94px;
   padding-top: 94px;
+  background-color: rgba(245, 244, 250, 1);
 }
 .team-title {
   color: var(--title-color);
