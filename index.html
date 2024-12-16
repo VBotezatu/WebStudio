@@ -63,7 +63,7 @@
       <section class="solution">
         <div class="container main-container">
           <h1 class="solution-title">EFFECTIVE SOLUTION FOR YOUR BUSINESS</h1>
-          <button class="solution-button" type="button">order a service</button>
+          <button data-modal-open class="solution-button" type="button">order a service</button>
         </div>
       </section>
       <!-- features -->
@@ -71,6 +71,11 @@
         <div class="container">
           <ul class="features-list">
             <li class="features-item">
+              <div class="features-box">
+                <svg class="features-icon">
+                  <use href="./images/symbol-defs.svg#icon-antena"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Attetions to details</h3>
               <p class="features-text">
                 Ideological considerations, as well as the beginning of daily
@@ -78,6 +83,11 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-box">
+                <svg class="features-icon">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Punctuality</h3>
               <p class="features-text">
                 The most important quality that clearly defines the framework
@@ -85,6 +95,11 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-box">
+                <svg class="features-icon">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Planning</h3>
               <p class="features-text">
                 Consulting with a wide range of expertise that determines the
@@ -92,6 +107,11 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-box">
+                <svg class="features-icon">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-title">Modern technology</h3>
               <p class="features-text">
                 The ability to perform the most complex projects at the highest
@@ -112,6 +132,9 @@
                 src="./images/laptop.jpg"
                 alt="computer2"
               />
+              <div class="photo-box">
+                <p class="box-text">Desktop applications</p>
+              </div>
             </li>
             <li class="photo-item">
               <img
@@ -119,9 +142,15 @@
                 src="./images/computer.jpg"
                 alt="computter"
               />
+              <div class="photo-box">
+                <p class="box-text">Mobile applications</p>
+              </div>
             </li>
             <li class="photo-item">
               <img class="photo-img" src="./images/laptop2.jpg" alt="laptop2" />
+              <div class="photo-box">
+                <p class="box-text">Design solutions</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -389,5 +418,15 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="modal-icon">
+            <use href="./images/symbol-defs.svg#icon-cancel-circle"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>

@@ -138,18 +138,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.features-item::before {
-  content: "";
-  display: block;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-}
-.features-item:first-child:before {
+/* .features-item:first-child:before {
   background-image: url(../images/antenna.png);
 }
 .features-item:nth-child(2)::before {
@@ -160,7 +149,7 @@ body {
 }
 .features-item:nth-child(4)::before {
   background-image: url(../images/astronaut.png);
-}
+} */
 .features-title {
   color: var(--title-color);
   font-size: 14px;
@@ -168,6 +157,20 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+.features-box {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .features-list {
   display: flex;
@@ -199,6 +202,28 @@ body {
 }
 .photo-img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.photo-box {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: relative;
+  bottom: 70px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 .team {
   padding-bottom: 94px;
@@ -301,14 +326,15 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
 }
-.users-link:hover .users-icon{
+.users-link:hover .users-icon {
   fill: #2196f3;
 }
-.users-link:hover{
+.users-link:hover {
   border-color: #2196f3;
 }
 .item-informationn {
-  margin-bottom: 9px;}
+  margin-bottom: 9px;
+}
 
 .footer-title {
   color: var(--navigation-color);
@@ -341,7 +367,6 @@ body {
   padding-bottom: 60px;
 }
 
-
 .footer-map {
   color: #fff;
   font-family: Roboto;
@@ -373,4 +398,44 @@ body {
 }
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.modal-icon {
+  width: 30px;
+  height: 30px;
+  fill: #404040;
+  stroke: #404040;
+}
+.modal-close {
+  background-color: transparent;
+  border-radius: 30px;
+  width: 55px;
+  height: 55px;
+  margin-left: auto;
+  display: block;
 }
