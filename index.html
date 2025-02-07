@@ -420,52 +420,69 @@
         </div>
         <div class="footer-div-form">
           <p class="form-text">Subscribe to newsletters</p>
-           <form class="footer-form">
-          <input
-            class="footer-form-input"
-            type="email"
-            placeholder="E-mail"
-          />
-          <button class="modal-button" type="submit">Subscribe</button>
-        </form>
+          <form class="footer-form">
+            <input
+              class="footer-form-input"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="modal-button" type="submit">Subscribe</button>
+             <svg class="footer-svg-11">
+                <use href="./images/symbol-defss.svg#icon-telegram"></use>
+              </svg>
+          </form>
         </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal-close">
-          <img class="modal-close-img" src="./images/close.webp" alt="">
+          <img class="modal-close-img" src="./images/close.webp" alt="" />
         </button>
+        <img class="modal-cirlce" src="./images/modal-circle.webp" alt="">
         <p class="modal-text">Leave your details, we will call you back</p>
         <form>
           <ul class="modal-list">
             <li class="modal-item">
-              <img class="modal-img" src="./images/person.webp" alt="">
+              <svg class="modal-svg">
+                <use href="./images/symbol-defss.svg#icon-person"></use>
+              </svg>
               <label class="modal-label" for="7">Name</label>
-              <input class="modal-input" type="text">
+              <input class="modal-input" type="text" />
             </li>
             <li class="modal-item">
-              <img class="modal-img" src="./images/phone.webp" alt="">
+              <svg class="modal-svg">
+                <use href="./images/symbol-defss.svg#icon-phone"></use>
+              </svg>
               <label class="modal-label" for="7">Phone</label>
-              <input class="modal-input" type="number">
+              <input required class="modal-input" type="tel" />
             </li>
             <li class="modal-item">
-              <img class="modal-img" src="./images/email.webp" alt="">
+              <svg class="modal-svg">
+                <use href="./images/symbol-defss.svg#icon-email"></use>
+              </svg>
               <label class="modal-label" for="7">Email</label>
-              <input class="modal-input" type="email">
+              <input required class="modal-input" type="email" />
             </li>
             <li class="modal-item">
               <label class="modal-label" for="7">Comment</label>
-              <input class="modal-input1" placeholder="type text" type="text">
+              <textarea
+                class="modal-input1"
+                placeholder="type your text"
+                name=""
+                id=""
+              ></textarea>
             </li>
           </ul>
+          <div class="modal-checkbox">
+            <input required class="modal-checkbox-input" type="checkbox" />
+            <p class="modal-checkbox-text">
+              I agree with the newsletter and accept
+            </p>
+            <a class="modal-checkbox-link" href="f">Contract terms</a>
+          </div>
+          <button class="modal-button1" type="submit">Submit</button>
         </form>
-        <div class="modal-checkbox">
-          <input class="modal-checkbox-input" type="checkbox"/>
-          <p class="modal-checkbox-text">I agree with the newsletter and accept</p>
-          <a class="modal-checkbox-link" href="f">Contract terms</a>
-        </div>
-        <button class="modal-button" type="button">Submit</button>
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
