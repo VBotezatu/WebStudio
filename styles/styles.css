@@ -36,6 +36,8 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-adress:hover span {
   color: var(--navigation-color);
@@ -71,6 +73,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link::after {
   content: "";
@@ -82,6 +85,7 @@ body {
   background-color: var(--navigation-color);
   margin-top: 29px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
   opacity: 1;
@@ -100,6 +104,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-adress:hover {
   color: var(--navigation-color);
@@ -303,6 +308,8 @@ body {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover .team-icon {
   fill: #fff;
@@ -326,6 +333,7 @@ body {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .users-list {
   display: flex;
@@ -340,6 +348,8 @@ body {
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .users-link:hover .users-icon {
   fill: #2196f3;
@@ -445,6 +455,13 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #f5f4fa;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-input:hover {
+  border: 1px solid #2196f3;
+}
+.footer-form-input:focus{
+  outline: none;
 }
 .footer-form-input::placeholder {
   display: flex;
@@ -531,6 +548,14 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input:hover .modal-svg {
+  fill: #2196f3;
+  stroke: #2196f3;
+}
+.modal-input:focus {
+  outline: none;
 }
 .modal-input1 {
   width: 448px;
@@ -543,6 +568,13 @@ body {
   padding-left: 16px;
   padding-top: 13px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-input1:focus {
+  outline: none;
+}
+.modal-input1:hover {
+  border: 1px solid #2196f3;
 }
 .modal-input1::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -553,7 +585,7 @@ body {
   line-height: normal;
   letter-spacing: 0.12px;
 }
-.modal-input:before {
+.modal-input:hover {
   border: 1px solid #2196f3;
 }
 .modal-comment {

@@ -76,6 +76,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link::after {
   content: "";
@@ -87,6 +88,7 @@ body {
   background-color: var(--navigation-color);
   margin-top: 29px;
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
   color: var(--navigation-color);
@@ -133,6 +135,8 @@ body {
   background: var(--icons-color);
   width: 102px;
   height: 38px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover {
   color: var(--main_title-color);
@@ -246,6 +250,7 @@ body {
 }
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 .team-icon {
   width: 20px;
@@ -303,6 +308,13 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #ececec;
+  transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-input:hover {
+  border: 1px solid #2196f3;
+}
+.footer-form-input:focus{
+  outline: none;
 }
 .modal-button {
   width: 200px;
@@ -345,6 +357,7 @@ body {
   padding-right: 24px;
   padding-bottom: 63px;
   padding-top: 63px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .posters-img .posters-overlay:hover {
   opacity: 1;
