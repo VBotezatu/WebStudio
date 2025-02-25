@@ -31,18 +31,6 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
-  animation-name: move-logo;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes move-logo {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(80px);
-  }
 }
 .header-adress {
   display: flex;
@@ -165,6 +153,11 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 30px;
   align-items: center;
+  transition: background-color 500ms linear, color 500ms linear;
+}
+.solution-button:hover {
+  background-color: #f5f4fa;
+  color: #2196f3;
 }
 .features {
   padding-top: 94px;
@@ -293,6 +286,18 @@ body {
   line-height: 1.19;
   letter-spacing: 0.48px;
   margin-bottom: 10px;
+  animation-name: move-name;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes move-name {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(5px);
+  }
 }
 .team-text {
   color: var(--icons-color);
@@ -380,6 +385,18 @@ body {
   font-weight: 700;
   line-height: 1.39;
   letter-spacing: 0.78px;
+  animation-name: scale-title;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes scale-title{
+0%{
+  transform: scale(0.7);
+}
+100%{
+  transform: scale(1.2);
+}
 }
 .footer-studio {
   color: var(--main_title-color);
