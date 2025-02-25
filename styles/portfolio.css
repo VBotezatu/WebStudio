@@ -165,6 +165,8 @@ body {
   max-width: 370px;
   border: 1px solid var(--border-color);
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .posters-img:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
@@ -250,7 +252,8 @@ body {
 }
 .footer-link {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   width: 20px;
@@ -308,12 +311,12 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #ececec;
-  transition: border 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input:hover {
   border: 1px solid #2196f3;
 }
-.footer-form-input:focus{
+.footer-form-input:focus {
   outline: none;
 }
 .modal-button {
@@ -358,9 +361,13 @@ body {
   padding-bottom: 63px;
   padding-top: 63px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  pointer-events: none;
 }
-.posters-img .posters-overlay:hover {
+.posters-img:hover .posters-overlay {
   opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .overlay-text {
   color: #fff;

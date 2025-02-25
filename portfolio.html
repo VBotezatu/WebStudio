@@ -19,6 +19,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -88,7 +93,7 @@
         <div class="container div-container">
           <ul class="posters-imgs">
             <li class="posters-img">
-              <div class="posters-overlay">
+              <div  class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -105,7 +110,7 @@
                 <p class="posters-text">Website</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -123,7 +128,7 @@
                 <p class="posters-text">Design</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li data-aos="fade-up" class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,7 +142,7 @@
                 <p class="posters-text">Application</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -155,7 +160,7 @@
                 <p class="posters-text">Marketing</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -169,7 +174,7 @@
                 <p class="posters-text">Application</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -183,7 +188,7 @@
                 <p class="posters-text">Website</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -211,7 +216,7 @@
                 <p class="posters-text">Marketing</p>
               </div>
             </li>
-            <li class="posters-img">
+            <li  class="posters-img">
               <div class="posters-overlay">
                 <p class="overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -296,6 +301,7 @@
           <p class="form-text">Subscribe to newsletters</p>
           <form class="footer-form">
             <input
+             required
               class="footer-form-input"
               type="email"
               placeholder="E-mail"
@@ -308,5 +314,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

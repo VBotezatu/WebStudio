@@ -19,6 +19,11 @@
     />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <!-- body -->
   <body>
@@ -422,14 +427,15 @@
           <p class="form-text">Subscribe to newsletters</p>
           <form class="footer-form">
             <input
+              required
               class="footer-form-input"
               type="email"
               placeholder="E-mail"
             />
             <button class="modal-button" type="submit">Subscribe</button>
-             <svg class="footer-svg-11">
-                <use href="./images/symbol-defss.svg#icon-telegram"></use>
-              </svg>
+            <svg class="footer-svg-11">
+              <use href="./images/symbol-defss.svg#icon-telegram"></use>
+            </svg>
           </form>
         </div>
       </div>
@@ -437,9 +443,11 @@
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal-close">
-          <img class="modal-close-img" src="./images/close.webp" alt="" />
+          <svg class="modal-close-svg">
+            <use href="./images/symbol-defsss.svg#icon-Vector"></use>
+          </svg>
         </button>
-        <img class="modal-cirlce" src="./images/modal-circle.webp" alt="">
+        <img class="modal-cirlce" src="./images/modal-circle.webp" alt="" />
         <p class="modal-text">Leave your details, we will call you back</p>
         <form>
           <ul class="modal-list">
@@ -448,7 +456,7 @@
                 <use href="./images/symbol-defss.svg#icon-person"></use>
               </svg>
               <label class="modal-label" for="7">Name</label>
-              <input class="modal-input" type="text" />
+              <input required class="modal-input" type="text" />
             </li>
             <li class="modal-item">
               <svg class="modal-svg">
@@ -467,6 +475,7 @@
             <li class="modal-item">
               <label class="modal-label" for="7">Comment</label>
               <textarea
+                required
                 class="modal-input1"
                 placeholder="type your text"
                 name=""
@@ -486,5 +495,9 @@
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
