@@ -1,0 +1,42 @@
+
+.photo {
+  padding-bottom: 94px;
+}
+.photo-title {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.photo-list {
+  display: flex;
+  gap: 30px;
+}
+.photo-img {
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.photo-box {
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: relative;
+  bottom: 70px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

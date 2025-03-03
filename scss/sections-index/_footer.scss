@@ -1,0 +1,123 @@
+
+
+.footer-title {
+  color: var(--navigation-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.39;
+  letter-spacing: 0.78px;
+  animation-name: scale-title;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.footer-studio {
+  color: var(--main_title-color);
+}
+.footer-adress {
+  color: var(--main_title-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer-information {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.footer {
+  background: var(--title-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-map {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-join {
+  margin-left: 70px;
+}
+.flex-container {
+  display: flex;
+}
+.footer-subtitle {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.footer-icon {
+  fill: #f5f4fa;
+}
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-div-form {
+  margin-left: 93px;
+}
+.form-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-form {
+  display: flex;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  color: #f5f4fa;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-input:hover {
+  border: 1px solid #2196f3;
+}
+.footer-form-input:focus {
+  outline: none;
+}
+.footer-form-input::placeholder {
+  display: flex;
+  width: 47px;
+  height: 20px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
