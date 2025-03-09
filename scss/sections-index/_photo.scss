@@ -1,9 +1,8 @@
 
 .photo {
   padding-bottom: 94px;
-}
-.photo-title {
-  color: var(--title-color);
+&__title {
+  color: $title-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -11,14 +10,15 @@
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.photo-list {
+&__list {
   display: flex;
   gap: 30px;
 }
-.photo-img {
+&__img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
-.photo-box {
+
+&__box {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -29,8 +29,8 @@
   justify-content: center;
   align-items: center;
 }
-.box-text {
-  color: #fff;
+&__box__text {
+  color: $main_title-color;
   text-align: center;
   font-family: Roboto;
   font-size: 14px;
@@ -39,4 +39,5 @@
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
 }

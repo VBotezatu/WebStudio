@@ -2,6 +2,8 @@
 @import './base/command';
 @import './base/command-p';
 @import './utilities/vars';
+@import './utilities/vars-p';
+@import './utilities/animations-p';
 @import './utilities/animations';
 @import './sections-index/features';
 @import './sections-index/footer';
@@ -10,9 +12,9 @@
 @import './sections-index/solution';
 @import './sections-index/team';
 @import './sections-index/users';
-@import './sections-portfolio/button.scss';
-@import './sections-portfolio/footer.scss';
-@import './sections-portfolio/header.scss';
-@import './sections-portfolio/posters.scss';
-@import './sections-portfolio/team.scss';
-@import './modal/modal.scss'
+@import './sections-portfolio/button';
+@import './sections-portfolio/footer';
+@import './sections-portfolio/header';
+@import './sections-portfolio/posters';
+@import './sections-portfolio/team';
+@import './modal/modal'
