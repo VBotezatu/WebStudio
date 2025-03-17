@@ -31,109 +31,100 @@
     line-height: 1.71;
     letter-spacing: 0.42px;
   }
-&__map {
-  color: $main_title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  margin-bottom: 9px;
+  &__map {
+    color: $main_title-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  &__join {
+    margin-left: 70px;
+  }
+  &__subtitle {
+    color: $main_title-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  &__icon {
+    fill: $main_title-color;
+  }
+  &__link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__svg11 {
+    width: 24px;
+    height: 24px;
+    fill: $background-color;
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+  &__modalbutton {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: $navigation-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $background-color;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    padding-right: 28px;
+  }
 }
-&__join {
-  margin-left: 70px;
+.flex__container {
+  display: flex;
 }
-&__subtitle {
-  color: $main_title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-&__icon {
-  fill: $main_title-color;
-}
-&__link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-&__div__form {
-  margin-left: 93px;
-}
-&__form__text {
-  color: $main_title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-&__form {
+.form {
   display: flex;
   gap: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  &__div {
+    margin-left: 93px;
+  }
+  &__text {
+    color: $main_title-color;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left: 16px;
+    color: $main_title-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border: 1px solid $navigation-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
 }
-&__form__input {
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding-left: 16px;
-  color: $main_title-color;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-&__form__input:hover {
-  border: 1px solid $navigation-color;
-}
-&__form__input:focus {
-  outline: none;
-}
-&__svg__11 {
-  width: 24px;
-  height: 24px;
-  fill: $background-color;
-  position: absolute;
-  top: 13px;
-  right: 28px;
-}
-&__modal__button {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background: $navigation-color;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: $background-color;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
-  padding-right: 28px;
-}
-}
-.flex__container {
-  display: flex;
-}
-
-
-
-
-
-
-
-
-
-
