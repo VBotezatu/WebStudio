@@ -130,7 +130,11 @@
     justify-content: center;
     padding-right: 28px;
   }
+  &__item:first-child {
+  margin-bottom: 9px;
 }
-.flex__container {
+&__box {
   display: flex;
 }
+}
+
