@@ -87,14 +87,10 @@
   }
 }
 .flex__container {
-  display: flex;
+  @include flexbox();
 }
 .form {
-  display: flex;
-  gap: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@include flexbox($space: 12px,$alignment: center, $horizontal: center);
   position: relative;
   &__div {
     margin-left: 93px;

@@ -18,13 +18,11 @@
     height: 120px;
     border-radius: 4px;
     background: #f5f4fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($alignment: center, $horizontal: center);
     margin-bottom: 30px;
   }
   &__list {
-    display: flex;
+    @include flexbox();
     gap: 30px;
   }
 

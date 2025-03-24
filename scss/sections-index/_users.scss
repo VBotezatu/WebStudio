@@ -18,14 +18,11 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__list {
-    display: flex;
-    gap: 30px;
+    @include flexbox($space: 30px);
     padding-bottom: 94px;
   }
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($alignment: center, $horizontal: center);
     width: 170px;
     height: 92px;
     border-radius: 4px;
@@ -39,7 +36,4 @@
   &__link:hover {
     border-color: $navigation-color;
   }
-}
-.item__informationn {
-  margin-bottom: 9px;
 }

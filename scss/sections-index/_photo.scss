@@ -11,8 +11,7 @@
   margin-bottom: 50px;
 }
 &__list {
-  display: flex;
-  gap: 30px;
+  @include flexbox($space: 30px);
 }
 &__img {
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
@@ -25,9 +24,7 @@
   position: relative;
   bottom: 70px;
   left: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox($horizontal: center, $alignment: center);
 }
 &__info {
   color: $main_title-color;

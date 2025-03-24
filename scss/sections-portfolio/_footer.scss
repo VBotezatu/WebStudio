@@ -77,11 +77,7 @@
     margin-bottom: 20px;
   }
   &__form {
-    display: flex;
-    gap: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($space: 12px, $alignment: center, $horizontal: center);
     position: relative;
   }
   &__forminput {
@@ -125,16 +121,13 @@
     letter-spacing: 0.96px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($alignment: center, $horizontal: center);
     padding-right: 28px;
   }
   &__item:first-child {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
+  }
+  &__box {
+    @include flexbox();
+  }
 }
-&__box {
-  display: flex;
-}
-}
-

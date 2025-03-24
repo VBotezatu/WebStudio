@@ -2,12 +2,10 @@
   padding-top: 94px;
   padding-bottom: 48px;
   &__container {
-    align-items: center;
+    @include flexbox($alignment: center, $horizontal: center);
   }
   &__list {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
+    @include flexbox($space: 8px, $horizontal: center);
   }
   &__button {
     background-color: rgba(245, 244, 250, 1);

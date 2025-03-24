@@ -1,8 +1,7 @@
 .header {
   padding: 24px;
   &__container {
-    display: flex;
-    align-items: center;
+    @include flexbox($alignment: center);
   }
   &__logo {
     color: $navigation-color;
@@ -13,9 +12,7 @@
     letter-spacing: 0.78px;
   }
   &__adress {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+    @include flexbox($space: 10px, $alignment: center);
   }
   &__adress:hover span {
     color: $navigation-color;
@@ -40,9 +37,7 @@
   }
   &__list {
     margin-left: 93px;
-    display: flex;
-    gap: 60px;
-    align-items: center;
+    @include flexbox($space: 60px, $alignment: center);
   }
   &__link {
     color: $title-color;
@@ -74,8 +69,7 @@
   }
   &__contacts {
     margin-left: 318px;
-    display: flex;
-    gap: 30px;
+    @include flexbox($space: 30px);
   }
   &__adress {
     color: $text-color;
