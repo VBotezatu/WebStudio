@@ -71,6 +71,74 @@ body {
   border-top: 1px solid var(--header-decor);
 }
 
+.footer__title {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.39;
+  letter-spacing: 0.78px;
+  animation-name: scale-title;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.footer__adress {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer__information {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer__map {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer__subtitle {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer__modalbutton {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  padding-right: 28px;
+}
+
 @keyframes scale-title {
   0% {
     transform: scale(0.7);
@@ -145,57 +213,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__title {
-  color: #2196f3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.39;
-  letter-spacing: 0.78px;
-  animation-name: scale-title;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .footer__studio {
   color: #fff;
 }
-.footer__adress {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-.footer__information {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-.footer__map {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
 .footer__join {
   margin-left: 70px;
-}
-.footer__subtitle {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 .footer__icon {
   fill: #fff;
@@ -211,23 +233,6 @@ body {
   top: 13px;
   right: 28px;
 }
-.footer__modalbutton {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
-  padding-right: 28px;
-}
-
 .flex__container {
   align-items: flex-start;
   display: flex;
@@ -602,57 +607,11 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__title {
-  color: #2196f3;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.39;
-  letter-spacing: 0.78px;
-  animation-name: scale-title;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .footer__studio {
   color: #fff;
 }
-.footer__adress {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-.footer__information {
-  color: #757575;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-.footer__map {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
 .footer__join {
   margin-left: 70px;
-}
-.footer__subtitle {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 .footer__icon {
   fill: #fff;
@@ -709,19 +668,6 @@ body {
   fill: #fff;
 }
 .footer__modalbutton {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -729,7 +675,6 @@ body {
   gap: 0px;
   justify-content: center;
   flex-direction: row;
-  padding-right: 28px;
 }
 .footer__item:first-child {
   margin-bottom: 9px;

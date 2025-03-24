@@ -3,56 +3,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
   &__title {
-    color: $navigation-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.39;
-    letter-spacing: 0.78px;
-    animation-name: scale-title;
-    animation-duration: 3000ms;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    @extend %footer__title;
   }
   &__studio {
     color: $main_title-color;
   }
   &__adress {
-    color: $main_title-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @extend %footer__adress;
   }
   &__information {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @extend %footer__information;
   }
   &__map {
-    color: $background-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    margin-top: 20px;
-    margin-bottom: 9px;
+    @extend %footer__map;
   }
   &__join {
     margin-left: 70px;
   }
   &__subtitle {
-    color: $background-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+    @extend %footer__subtitle;
   }
   &__icon {
     fill: $background-color;
@@ -106,23 +75,10 @@
     fill: $main_title-color;
   }
   &__modalbutton {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: $navigation-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: $background-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
+    @extend %footer__modalbutton;
     margin-left: auto;
     margin-right: auto;
     @include flexbox($alignment: center, $horizontal: center);
-    padding-right: 28px;
   }
   &__item:first-child {
     margin-bottom: 9px;
