@@ -1,62 +1,18 @@
-%footer__title {
-  color: $navigation-color;
-  font-family: Raleway;
-  font-size: 26px;
+%title {
+  color: $title-color;
+  text-align: center;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.39;
-  letter-spacing: 0.78px;
-  animation-name: scale-title;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
-%footer__adress {
-  color: $main_title-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-%footer__information {
-  color: $text-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-%footer__map {
-  color: $main_title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
-%footer__subtitle {
-  color: $main_title-color;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
-%footer__modalbutton {
-  width: 200px;
-  height: 50px;
+%button {
   border-radius: 4px;
   background: $navigation-color;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: $background-color;
+  height: 50px;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
-  padding-right: 28px;
 }

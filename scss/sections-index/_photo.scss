@@ -2,13 +2,8 @@
 .photo {
   padding-bottom: 94px;
 &__title {
-  color: $title-color;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
+  @extend %title;
   line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
 }
 &__list {
   @include flexbox($space: 30px);
