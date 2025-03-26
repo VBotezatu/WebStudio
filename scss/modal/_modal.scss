@@ -17,12 +17,10 @@
   width: 528px;
   height: 581px;
   border-radius: 4px;
-  background: #fff;
+  background: $background-color;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @include absolute($top: 50%, $right: 14%);
   transform: translate(-50%, -50%);
   padding: 40px;
   &__icon {
@@ -38,125 +36,102 @@
     height: 55px;
     margin-left: auto;
     display: block;
-    position: absolute;
-    top: 1px;
-    right: -8.5px;
+    @include absolute($top: 1px, $right: -8.5px);
     z-index: 1;
   }
   &__cirlce {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+    @include absolute($top: 8px, $right: 8px);
     width: 30px;
     height: 30px;
-    fill: #fff;
+    fill: $background-color;
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.1);
   }
   &__text {
-    color: #212121;
+    @include text(
+      $color: $title-color,
+      $size: 20px,
+      $weight: 700,
+      $spacing: 0.6px
+    );
     text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
     margin-bottom: 12px;
   }
   &__input {
-    width: 448px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    @include input($height: 40px);
     padding-left: 42px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
   }
   &__item:hover &__svg {
-    fill: #2196f3;
+    fill: $navigation-color;
   }
   &__input:focus {
     outline: none;
   }
   &__input1 {
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    @include input($height: 120px);
     padding: 12px, 12px, 16px, 16px;
     position: relative;
     display: inline-block;
     padding-left: 16px;
     padding-top: 13px;
     resize: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
   }
   &__input1:focus {
     outline: none;
   }
   &__input1:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $navigation-color;
   }
   &__input1::placeholder {
     color: rgba(117, 117, 117, 0.5);
-    font-family: Roboto;
-    font-size: 12px;
+    @include text($size: 12px, $weight: 400, $spacing: 0.12px);
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
   }
   &__input:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $navigation-color;
   }
   &__comment {
-    height: 120px;
-    width: 448px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    @include input($height: 120px);
   }
   &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    @include flexbox($space: 10px, $direction: column);
   }
   &__label {
     display: block;
     margin-bottom: 4px;
-    color: #757575;
-    font-family: Roboto;
-    font-size: 12px;
+    @include text(
+      $color: $text-color,
+      $size: 12px,
+      $weight: 400,
+      $spacing: 0.12px
+    );
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
   }
   &__checkbox {
-    display: flex;
+    @include flexbox($alignment: center, $horizontal: center);
     margin-top: 20px;
-    align-items: center;
-    justify-content: center;
   }
   &__checkboxtext {
-    color: #757575;
-    font-family: Roboto;
-    font-size: 14px;
+    @include text(
+      $color: $text-color,
+      $size: 14px,
+      $weight: 400,
+      $height: 24px,
+      $spacing: 0.42px
+    );
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
     margin-right: 5px;
   }
   &__checkboxlink {
-    color: #2196f3;
-    font-family: Roboto;
-    font-size: 14px;
+    @include text(
+      $size: 14px,
+      $weight: 400,
+      $height: 24px,
+      $spacing: 0.42px,
+      $color: $navigation-color
+    );
     font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.42px;
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-skip-ink: none;
@@ -168,28 +143,7 @@
     margin-right: 7px;
     width: 16px;
     height: 15px;
-    color: #000000;
-  }
-  &__button {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 28px;
+    color: $logo-color;
   }
   &__item {
     position: relative;
@@ -197,41 +151,26 @@
   &__svg {
     width: 18px;
     height: 18px;
-    fill: #000000;
-    position: absolute;
-    top: 29px;
-    left: 12px;
+    fill: $logo-color;
+    @include absolute($top: 29px, $right: 418px);
   }
   &__closesvg {
     width: 13px;
     height: 13px;
-    position: absolute;
-    top: 16px;
-    left: 17px;
+    @include absolute($top: 16px, $right: 25px);
   }
   &__closesvg:hover {
-    fill: #2196f3;
+    fill: $navigation-color;
   }
   &__button1 {
+    @extend %button;
     width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
+    color: $background-color;
     font-style: normal;
-    font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0.96px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($alignment: center, $horizontal: center);
     margin-top: 30px;
   }
 }
-

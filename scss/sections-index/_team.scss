@@ -1,6 +1,5 @@
 .team {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @extend %padding;
   background-color: rgba(245, 244, 250, 1);
   &__title {
     @extend %title;
@@ -20,12 +19,12 @@
     margin-bottom: 30px;
   }
   &__name {
-    color: $title-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
-    letter-spacing: 0.48px;
+    @include info(
+      $color: $title-color,
+      $align: center,
+      $weight: 500,
+      $height: 1.19
+    );
     margin-bottom: 10px;
     animation-name: move-name;
     animation-duration: 2000ms;
@@ -33,13 +32,11 @@
     animation-direction: alternate;
   }
   &__text {
-    color: $icons-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.19;
-    letter-spacing: 0.48px;
+    @include info(
+      $color: $icons-color,
+      $align: center,
+      $weight: 400,
+      $height: 1.19
+    );
   }
-
-
 }

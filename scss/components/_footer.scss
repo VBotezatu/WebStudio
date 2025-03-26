@@ -3,12 +3,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
   &__title {
-    color: $navigation-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.39;
-    letter-spacing: 0.78px;
+    @include text(
+      $color: $navigation-color,
+      $size: 26px,
+      $weight: 700,
+      $height: 1.39,
+      $spacing: 0.78px
+    );
     animation-name: scale-title;
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
@@ -18,26 +19,31 @@
     color: $main_title-color;
   }
   &__adress {
-    color: $main_title-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text(
+      $color: $main_title-color,
+      $size: 14px,
+      $weight: 400,
+      $height: 1.71,
+      $spacing: 0.42px
+    );
   }
   &__information {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text(
+      $color: $text-color,
+      $size: 14px,
+      $weight: 400,
+      $height: 1.71,
+      $spacing: 0.42px
+    );
   }
   &__map {
-    color: $main_title-color;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    @include text(
+      $color: $main_title-color,
+      $size: 14px,
+      $weight: 400,
+      $height: 1.71,
+      $spacing: 0.42px
+    );
     margin-top: 20px;
     margin-bottom: 9px;
   }
@@ -45,14 +51,15 @@
     margin-left: 70px;
   }
   &__subtitle {
-    color: $main_title-color;
-    font-family: Roboto;
-    font-size: 14px;
+    @include text(
+      $color: $main_title-color,
+      $size: 14px,
+      $weight: 700,
+      $height: normal,
+      $spacing: 0.42px,
+      $transform: uppercase
+    );
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
   }
   &__icon {
     fill: $main_title-color;
@@ -65,9 +72,7 @@
     width: 24px;
     height: 24px;
     fill: $background-color;
-    position: absolute;
-    top: 13px;
-    right: 28px;
+    @include absolute($top: 13px, $right: 28px);
   }
   &__modalbutton {
     @extend %button;
@@ -88,14 +93,15 @@
     margin-left: 93px;
   }
   &__text {
-    color: $main_title-color;
-    font-family: Roboto;
-    font-size: 14px;
+    @include text(
+      $color: $main_title-color,
+      $size: 14px,
+      $weight: 700,
+      $height: normal,
+      $spacing: 0.42px,
+      $transform: uppercase
+    );
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
     margin-bottom: 20px;
   }
   &__input {

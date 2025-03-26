@@ -1,7 +1,56 @@
-@mixin flexbox($space: 0px, $alignment: flex-start, $horizontal: flex-start, $direction: row) {
+@mixin flexbox(
+  $space: 0px,
+  $alignment: flex-start,
+  $horizontal: flex-start,
+  $direction: row
+) {
   align-items: $alignment;
   display: flex;
   gap: $space;
   justify-content: $horizontal;
   flex-direction: $direction;
+}
+@mixin text(
+  $color: #000000,
+  $size: normal,
+  $weight: normal,
+  $height: normal,
+  $spacing: normal,
+  $transform: normal
+) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}
+@mixin info($color: #000000, $align: normal, $weight: normal, $height: normal) {
+  color: $color;
+  text-align: $align;
+  font-size: 16px;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: 0.48px;
+}
+@mixin input($height: normal) {
+  width: 448px;
+  height: $height;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+@mixin overlay($height: normal) {
+  position: absolute;
+  width: 100%;
+  height: $height;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+}
+@mixin absolute($top:normal, $right:normal){
+  position: absolute;
+  top: $top;
+  right: $right;
 }

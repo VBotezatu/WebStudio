@@ -1,9 +1,9 @@
 .users {
+  @extend %padding;
   &__title {
     @extend %title;
     font-style: normal;
     line-height: normal;
-    padding-top: 94px;
   }
   &__icon {
     width: 106px;
@@ -13,7 +13,7 @@
   }
   &__list {
     @include flexbox($space: 30px);
-    padding-bottom: 94px;
+
   }
   &__link {
     @include flexbox($alignment: center, $horizontal: center);
