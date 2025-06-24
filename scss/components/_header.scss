@@ -11,17 +11,18 @@
       $spacing: 0.78px
     );
   }
-  &__adress {
-    @include flexbox($space: 10px, $alignment: center);
-    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   &__adress:hover span {
     color: $navigation-color;
   }
   &__adress:hover svg {
     fill: $navigation-color;
+  }
+  &__sidebar {
+    background: transparent;
+    margin-left: auto;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   &__phone {
     width: 10px;
@@ -40,8 +41,24 @@
     fill: rgba(117, 117, 117, 1);
   }
   &__list {
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
     margin-left: 93px;
-    @include flexbox($space: 60px, $alignment: center);
+    @media screen and (min-width:768px){
+      @include flexbox($space: 51px, $alignment: center);
+    }
+    @media screen and (min-width: 1200px) {
+      @include flexbox($space: 60px, $alignment: center);
+    }
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      display: flex;
+    }
   }
   &__link {
     @include text(
@@ -69,10 +86,40 @@
     color: $navigation-color;
   }
   &__contacts {
-    margin-left: 318px;
     @include flexbox($space: 30px);
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      margin-left: 82px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-left: 318px;
+    }
+  }
+  &__menu {
+    color: rgba(0, 0, 0, 1);
+    width: 40px;
+    height: 40px;
+    margin-left: 250px;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
   &__adress {
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      letter-spacing: 0.24px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      letter-spacing: 0.28px;
+    }
     @include text(
       $color: $text-color,
       $size: 14px,
@@ -81,6 +128,9 @@
       $spacing: 0.28px
     );
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include flexbox($space: 10px, $alignment: center);
+    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__adress:hover {
     color: $navigation-color;

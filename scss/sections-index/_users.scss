@@ -13,7 +13,10 @@
   }
   &__list {
     @include flexbox($space: 30px);
-
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
   &__link {
     @include flexbox($alignment: center, $horizontal: center);

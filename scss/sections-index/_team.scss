@@ -7,8 +7,21 @@
   }
   &__list {
     @include flexbox($space: 30px);
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
   &__item {
+    @media screen and (min-width:768px){
+      max-width: 354px;
+    }
+    @media screen and (min-width:1200px){
+      max-width: 270px;
+    }
     padding-bottom: 30px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),

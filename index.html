@@ -62,6 +62,23 @@
             </a>
           </li>
         </ul>
+        <button class="header__sidebar" data-menu-open>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+          >
+            <path
+              d="M3.5 14H24.5M3.5 7H24.5M3.5 21H24.5"
+              stroke="#111111"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main class="features-main">
@@ -137,31 +154,100 @@
           <h2 class="photo__title" data-aos="flip-down">What do we do?</h2>
           <ul class="photo__list">
             <li class="photo__item">
-              <img
-                class="photo__img"
-                src="./images/laptop.jpg"
-                alt="computer2"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/typing@desktop-1x.webp 1x,
+                    ./images/desktop/typing@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/typing@tablet-1x.webp 1x,
+                    ./images/tablet/typing@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/typing@mobile-1x.webp 1x,
+                    ./images/mobile/typing@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img
+                  class="photo__img"
+                  src="./images/laptop.jpg"
+                  alt="computer2"
+                />
+              </picture>
               <div data-aos="fade-up" class="photo__box">
                 <p class="photo__info">Desktop applications</p>
               </div>
             </li>
             <li class="photo__item">
-              <img
-                class="photo__img"
-                src="./images/computer.jpg"
-                alt="computter"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/laptophone@desktop-1x.webp 1x,
+                    ./images/desktop/laptophone@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/laptophone@tablet-1x.webp 1x,
+                    ./images/tablet/laptophone@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/laptophone@mobile-1x.webp 1x,
+                    ./images/mobile/laptophone@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img
+                  class="photo__img"
+                  src="./images/computer.jpg"
+                  alt="computter"
+                />
+              </picture>
               <div data-aos="fade-up" class="photo__box">
                 <p class="photo__info">Mobile applications</p>
               </div>
             </li>
             <li class="photo__item">
-              <img
-                class="photo__img"
-                src="./images/laptop2.jpg"
-                alt="laptop2"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/design@desktop-1x.webp 1x,
+                    ./images/desktop/design@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/design@tablet-1x.webp 1x,
+                    ./images/tablet/design@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/design@mobile-1x.webp 1x,
+                    ./images/mobile/design@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img
+                  class="photo__img"
+                  src="./images/laptop2.jpg"
+                  alt="laptop2"
+                />
+              </picture>
               <div data-aos="fade-up" class="photo__box">
                 <p class="photo__info">Design solutions</p>
               </div>
@@ -175,7 +261,30 @@
           <h2 data-aos="fade-right" class="team__title">Our team</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__img" src="./images/ihor.jpg" alt="Ihor" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/ihor@desktop-1x.webp 1x,
+                    ./images/desktop/ihor@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/ihor@tablet-1x.webp 1x,
+                    ./images/tablet/ihor@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/ihor@mobile-1x.webp 1x,
+                    ./images/mobile/ihor@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img class="team__img" src="./images/ihor.jpg" alt="Ihor" />
+              </picture>
               <h3 class="team__name">Ihor Demyanenko</h3>
               <p class="team__text">Product Designer</p>
               <ul class="social">
@@ -210,7 +319,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/olga.jpg" alt="Olga" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/olga@desktop-1x.webp 1x,
+                    ./images/desktop/olga@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga@tablet-1x.webp 1x,
+                    ./images/tablet/olga@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/olga@mobile-1x.webp 1x,
+                    ./images/mobile/olga@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img class="team__img" src="./images/olga.jpg" alt="Olga" />
+              </picture>
               <h3 class="team__name">Olga Repina</h3>
               <p class="team__text">Frontend Developer</p>
               <ul class="social">
@@ -245,7 +377,30 @@
               </ul>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/mykalo.jpg" alt="Mykola" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mikola@desktop-1x.webp 1x,
+                    ./images/desktop/mikola@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/mikola@tablet-1x.webp 1x,
+                    ./images/tablet/mikola@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mikola@mobile-1x.webp 1x,
+                    ./images/mobile/mikola@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img class="team__img" src="./images/mykalo.jpg" alt="Mykola" />
+              </picture>
               <h3 class="team__name">Mykola Tarasov</h3>
               <p class="team__text">Marketing</p>
               <ul class="social">
@@ -280,11 +435,34 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/mychailo.jpg"
-                alt="Mychailo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/miha@desktop-1x.webp 1x,
+                    ./images/desktop/miha@desktop-2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/miha@tablet-1x.webp 1x,
+                    ./images/tablet/miha@tablet-2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/miha@mobile-1x.webp 1x,
+                    ./images/mobile/miha@mobile-2x.webp 2x
+                  "
+                  media="(max-width: 767.98px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/mychailo.jpg"
+                  alt="Mychailo"
+                />
+              </picture>
               <h3 class="team__name">Mykhailo Yermakov</h3>
               <p class="team__text">UI Designer</p>
               <ul class="social">
@@ -372,6 +550,7 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="container flex__container">
         <div class="footer__container">
@@ -385,7 +564,7 @@
               >Kyiv, 26 Lesi Ukrainky Ave</a
             >
           </address>
-          <ul class="list__information">
+          <ul class="listok">
             <li class="item__informationn">
               <a class="footer__information" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -502,7 +681,24 @@
         </form>
       </div>
     </div>
+    <div data-menu class="backdropik is-hidden">
+      <div class="menu">
+        <button data-menu-close type="button" class="menu__close">
+          <svg class="modal__closesvg">
+            <use href="./images/symbol-defsss.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <nav class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item1">Studio</li>
+            <li class="footer__item1">Portfolio</li>
+            <li class="footer__item1">Contacts</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/modal-menu.js" type="module"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

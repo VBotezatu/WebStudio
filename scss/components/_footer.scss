@@ -14,9 +14,19 @@
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    text-align: center;
   }
   &__studio {
     color: $main_title-color;
+  }
+  &__item1 {
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: white;
+    font-family: Montserrat;
+    margin-bottom: 4px;
   }
   &__adress {
     @include text(
@@ -46,9 +56,22 @@
     );
     margin-top: 20px;
     margin-bottom: 9px;
+    margin-left: 60px;
+    @media screen and (min-width: 768px) {
+      margin-left: 290px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 0px;
+    }
   }
   &__join {
-    margin-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      margin-left: 70px;
+    }
   }
   &__subtitle {
     @include text(
@@ -59,7 +82,23 @@
       $spacing: 0.42px,
       $transform: uppercase
     );
+    text-align: center;
     font-style: normal;
+    margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
+  &__list {
+    gap: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
   &__icon {
     fill: $main_title-color;
@@ -72,7 +111,18 @@
     width: 24px;
     height: 24px;
     fill: $background-color;
-    @include absolute($top: 13px, $right: 28px);
+    @include absolute($top: 75px, $right: 70px);
+    @media screen and (min-width: 768px) {
+      @include absolute($top: 15px, $right: 110px);
+    }
+    @media screen and (min-width: 1200px) {
+      @include absolute($top: 13px, $right: 28px);
+    }
+  }
+  &__navigation {
+    border-top: solid rgba(255, 255, 255, 0.1);
+    margin-top: 58px;
+    padding-top: 24px;
   }
   &__modalbutton {
     @extend %button;
@@ -84,13 +134,20 @@
   }
 }
 .flex__container {
-  @include flexbox();
+  @media screen and (min-width: 1200px) {
+    @include flexbox();
+  }
 }
 .form {
   @include flexbox($space: 12px, $alignment: center, $horizontal: center);
   position: relative;
+  flex-wrap: wrap;
   &__div {
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
   &__text {
     @include text(
@@ -103,6 +160,7 @@
     );
     font-style: normal;
     margin-bottom: 20px;
+    text-align: center;
   }
   &__input {
     width: 358px;
@@ -120,5 +178,14 @@
     &:focus {
       outline: none;
     }
+  }
+}
+.listok {
+  margin-left: 80px;
+  @media screen and (min-width: 768px) {
+    margin-left: 305px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
   }
 }

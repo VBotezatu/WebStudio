@@ -25,6 +25,10 @@
   &__list {
     @include flexbox();
     gap: 30px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__text {
@@ -36,5 +40,13 @@
       $spacing: 0.42px
     );
     margin-top: 10px;
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
