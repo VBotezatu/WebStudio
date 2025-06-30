@@ -539,6 +539,7 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .users__list {
