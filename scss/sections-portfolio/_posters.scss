@@ -14,13 +14,18 @@
   &__imgs {
     @include flexbox($space: 30px, $horizontal: center);
     flex-wrap: wrap;
-    @media screen and (min-width:1200px0) {
+    @media screen and (min-width: 1200px0) {
       flex-wrap: nowrap;
     }
   }
   &__img {
     flex-basis: calc(100% - (30px * 3) / 3);
-    max-width: 370px;
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 370px;
+    }
     border: 1px solid $border-color;
     position: relative;
     overflow: hidden;
