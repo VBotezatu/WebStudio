@@ -15,7 +15,6 @@
     height: 70px;
   }
   &__box {
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     background: #f5f4fa;
@@ -48,5 +47,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 450px;
   }
 }
