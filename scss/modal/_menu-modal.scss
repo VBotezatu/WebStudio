@@ -16,7 +16,6 @@
   }
   &__close{
     background-color: transparent;
-    color: white;
     border-radius: 30px;
     width: 55px;
     height: 55px;
@@ -24,6 +23,8 @@
     display: block;
     @include absolute($top: 1px, $right: -8.5px);
     z-index: 1;
+    fill: aliceblue;
+    stroke: aliceblue;
   }
 }
 .backdropik {

@@ -73,6 +73,14 @@
       margin-left: 70px;
     }
   }
+  &__a {
+color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: -0.28px;
+  }
   &__subtitle {
     @include text(
       $color: $main_title-color,

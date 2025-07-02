@@ -80,7 +80,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: solid red;
 }
 @media screen and (min-width: 476px) {
   .container {
@@ -329,9 +328,34 @@ html {
   background: #212121;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/company.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero@mobile-1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../images/mobile/hero@mobile-2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .solution {
+    background-image: url(../images/tablet/hero@tablet-1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../images/tablet/hero@tablet-2x.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .solution {
+    background-image: url(../images/desktop/hero@desktop-1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .solution {
+    background-image: url(../images/desktop/hero@desktop-2x.webp);
+  }
 }
 .solution__title {
   color: #fff;
@@ -646,6 +670,14 @@ html {
     margin-bottom: 0px;
     margin-left: 70px;
   }
+}
+.footer__a {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
 }
 .footer__subtitle {
   color: #fff;
@@ -1037,7 +1069,6 @@ html {
 }
 .menu__close {
   background-color: transparent;
-  color: white;
   border-radius: 30px;
   width: 55px;
   height: 55px;
@@ -1047,6 +1078,8 @@ html {
   top: 1px;
   right: -8.5px;
   z-index: 1;
+  fill: aliceblue;
+  stroke: aliceblue;
 }
 
 .backdropik {
