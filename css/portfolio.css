@@ -498,14 +498,9 @@ html {
   line-height: 1.71;
   letter-spacing: 0.42px;
   text-transform: normal;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 9px;
-  margin-left: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer__map {
-    margin-left: 290px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer__map {
@@ -524,7 +519,7 @@ html {
   }
 }
 .footer__a {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -567,6 +562,7 @@ html {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__svg11 {
+  right: 100px;
   width: 24px;
   height: 24px;
   fill: #fff;
@@ -599,6 +595,7 @@ html {
   font-style: normal;
   line-height: 30px; /* 187.5% */
   padding-right: 28px;
+  position: relative;
 }
 
 @media screen and (min-width: 1200px) {
@@ -659,12 +656,9 @@ html {
 }
 
 .listok {
-  margin-left: 80px;
-}
-@media screen and (min-width: 768px) {
-  .listok {
-    margin-left: 305px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .listok {
