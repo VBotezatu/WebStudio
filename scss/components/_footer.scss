@@ -115,11 +115,10 @@
   }
 
   &__svg11 {
-    right: 100px;
     width: 24px;
     height: 24px;
     fill: $background-color;
-    @include absolute($top: 75px, $right: 70px);
+    @include absolute($top: 100px, $right: 70px);
     @media screen and (min-width: 768px) {
       @include absolute($top: 15px, $right: 110px);
     }
@@ -137,7 +136,7 @@
     width: 200px;
     color: $background-color;
     font-style: normal;
-    line-height: 30px; /* 187.5% */
+    line-height: 30px; 
     padding-right: 28px;
     position: relative;
   }

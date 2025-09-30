@@ -562,12 +562,11 @@ html {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .footer__svg11 {
-  right: 100px;
   width: 24px;
   height: 24px;
   fill: #fff;
   position: absolute;
-  top: 75px;
+  top: 100px;
   right: 70px;
 }
 @media screen and (min-width: 768px) {
@@ -593,7 +592,7 @@ html {
   width: 200px;
   color: #fff;
   font-style: normal;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   padding-right: 28px;
   position: relative;
 }
